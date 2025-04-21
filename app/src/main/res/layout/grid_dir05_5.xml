@@ -1,0 +1,50 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:rowCount="7"
+    android:padding="16dp">
+
+    <!-- 입력창 -->
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:hint="입력"
+        android:padding="10dp" />
+
+    <!-- 숫자 버튼 0~9 -->
+    <Button android:text="0" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="1" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="2" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="3" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="4" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="5" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="6" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="7" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="8" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button android:text="9" android:layout_width="80dp" android:layout_height="wrap_content"/>
+
+    <!-- 연산 버튼 -->
+    <Button android:text="더하기" android:layout_columnSpan="5"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:text="빼기" android:layout_columnSpan="5"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:text="곱하기" android:layout_columnSpan="5"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:text="나누기" android:layout_columnSpan="5"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <!-- 결과 텍스트 -->
+    <TextView
+        android:id="@+id/result"
+        android:text="계산결과:"
+        android:textColor="@color/red"
+        android:layout_columnSpan="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp" />
+
+</GridLayout>
