@@ -1,4 +1,5 @@
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:columnCount="5"
@@ -7,7 +8,16 @@
 
     <!-- 입력창 -->
     <EditText
-        android:id="@+id/input"
+        android:id="@+id/input1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="5"
+        android:layout_gravity="fill_horizontal"
+        android:hint="입력"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/input2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_columnSpan="5"
@@ -16,30 +26,98 @@
         android:padding="10dp" />
 
     <!-- 숫자 버튼 0~9 -->
-    <Button android:text="0" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="1" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="2" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="3" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="4" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="5" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="6" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="7" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="8" android:layout_width="80dp" android:layout_height="wrap_content"/>
-    <Button android:text="9" android:layout_width="80dp" android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn0"
+        android:text="0"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:text="1"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:text="2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:text="3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:text="4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:text="5"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:text="6"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:text="7"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:text="8"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:text="9"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content" />
 
     <!-- 연산 버튼 -->
-    <Button android:text="더하기" android:layout_columnSpan="5"
-        android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <Button android:text="빼기" android:layout_columnSpan="5"
-        android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <Button android:text="곱하기" android:layout_columnSpan="5"
-        android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <Button android:text="나누기" android:layout_columnSpan="5"
-        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_plus"
+        android:text="더하기"
+        android:layout_columnSpan="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:text="빼기"
+        android:layout_columnSpan="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_multiply"
+        android:text="곱하기"
+        android:layout_columnSpan="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_divide"
+        android:text="나누기"
+        android:layout_columnSpan="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <!-- 결과 텍스트 -->
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/text_result"
         android:text="계산결과:"
         android:textColor="@color/red"
         android:layout_columnSpan="5"
